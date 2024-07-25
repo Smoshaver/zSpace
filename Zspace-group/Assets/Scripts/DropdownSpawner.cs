@@ -8,6 +8,7 @@ public class TMPDropdownSpawner : MonoBehaviour
     public TMP_Dropdown dropdown;   // Use TMP_Dropdown for TextMeshPro
     public Transform spawnPoint;    // Reference to the spawn location
     public GameObject[] prefabs;    // Array of prefabs to spawn
+    public GameObject Cube3x3x3;
 
     void Start()
     {
@@ -31,6 +32,7 @@ public class TMPDropdownSpawner : MonoBehaviour
 
             // Instantiate selected prefab at the spawn point
             Instantiate(prefabs[index], spawnPoint.position, spawnPoint.rotation);
+           
         }
     }
 }
